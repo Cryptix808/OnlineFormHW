@@ -2,7 +2,7 @@ $(document).ready(function(){
     $(".button").hover(function(){
       $(".dropdown").slideToggle();
       $('#dropdownid a').click(function(){
-        val=$(this).data('value');
+        let val=$(this).data('value');
         $('#buttonid').text(val);
       });
     });
@@ -37,7 +37,7 @@ $(document).ready(function(){
     });
   });
 
-  eventHandler = function( event ) {
+  let eventHandler = function( event ) {
     /* do stuff */
     }
     $(function() {
