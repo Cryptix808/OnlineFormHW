@@ -1,0 +1,119 @@
+<!--Author: Miggy Sabater-->
+<!--Most of the code is seen and pulled from w3 schools
+Used website to get the layout and basics of the class
+The css fils is also similar but I changed some of the 
+colors and paddings-->
+<!--sources: w3school website and https://stackoverflow.com/questions/18171600/how-to-assign-value-to-href (for the script of changing text)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cheescake Order Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">   </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+</style>
+
+<!---Script where if mouse hovers dropdown appears
+If month is clicked then button text is changed-->
+<script src="javascripts/stuff.js"></script>
+
+</head>
+<body>
+
+<!--Class for just the Header-->
+<div class="header">
+    <h1>Cheescake Order Form</h1>
+    
+</div>
+
+<!--Navigation Bar-->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Menu</a>
+    <a href="#" class="right">Cheescake Order Form</a>
+</div>
+
+<!--Column on the left side of the website-->
+<div class="row">
+  <div class="side">
+    <!---Added classes and options for dropdown menu-->
+    <div class="button">
+      Order for <button id="buttonid" data-elemid="0">Jan</button>
+      <div class="dropdown" id="dropdownid">
+        <a href="#" data-value="Jan">Jan</a>
+        <a href="#" data-value="Feb">Feb</a>
+        <a href="#" data-value="Mar">Mar</a>
+        <a href="#" data-value="Apr">Apr</a>
+        <a href="#" data-value="May">May</a>
+        <a href="#" data-value="Jun">Jun</a>
+        <a href="#" data-value="Jul">Jul</a>
+        <a href="#" data-value="Aug">Aug</a>
+        <a href="#" data-value="Sep">Sep</a>
+        <a href="#" data-value="Oct">Oct</a>
+        <a href="#" data-value="Nov">Nov</a>
+        <a href="#" data-value="Dec">Dec</a>
+  
+      </div>
+    
+    </div>
+    
+
+        
+      
+
+
+    <p>12 Chocolate Cheescakes</p>
+    <p>15 Starberry Cheescakes</p>
+    <p>12 Palm Cheescakes</p>
+  </div>
+
+<!--Main Column for the information-->
+  <div class="main" id="mainID">
+    <p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Cheesecake_with_strawberry_and_whipped_cream.jpg" alt="Cheesecake" width="300" height="200">
+    <img src="https://www.simplyrecipes.com/wp-content/uploads/2016/11/2016-11-14-NoBakeCheesecake-12.jpg" alt="Cheesecake" width="300" height="200">
+    <img src="https://www.thecheesecakefactory.com/assets/images/Menu-Import/960x720-CCF_GodivaCheesecake.jpg" alt="Cheesecake" width="300" height="200">
+  </p>
+    <p id="quantityID">Quantity Topping</p>
+    <!--Dropdown menu-->
+    <select id="quantitySelect">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+    <!--Bullet menu-->
+    <ul>
+      <input type="radio" id="Plain" name="Topping" value="Plain">
+      <label for="Plain">Plain</label><br>
+      <input type="radio" id="Cherry" name="Topping" value="Cherry">
+      <label for="Cherry">Cherry</label><br>
+      <input type="radio" id="Chocolate" name="Topping" value="Chocolate">
+      <label for="Chocolate">Chocolate</label><br>
+    </ul>
+    
+    <!--Notes and text editor-->
+    <p>
+      <label for="Notes" id="notesTitle">Notes: </label>
+      <p><textarea id="notes" name="notescheese" rows="4" cols="50">
+        Enter any special instructions here and press enter for any alerts that will appear.
+      </textarea>
+      </p>
+    </p>
+
+    <!--Order button-->
+    <button type="button" id="orderButton" onclick="trialFunction()">Order</button>
+  </div>
+</div>
+
+<!--Footer-->
+<div class="footer">
+  <p style="text-align:right;">Created by Miggy Sabater </p>
+</div>
+
+
+</body>
+</html>
